@@ -6,7 +6,7 @@ function Child({ onChangeColor,color }) {
   function handleClick() {
     const newColor = getRandomColor();
     console.log(newColor);
-    onChangeColor(newColor);
+    onChangeColor(newColor); 
   }
 
   return (
