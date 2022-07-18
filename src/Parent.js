@@ -7,9 +7,8 @@ function Parent() {
   const [color, setColor] = useState(randomColor);
   const [childrenColor, setChildrenColor] = useState("#FFF");
 
-  function handleChangeColor() {
+  function handleChangeColor(newChildColor) {
     const newRandomColor = getRandomColor();
-    const newChildColor = getRandomColor();
     setColor(newRandomColor);
     setChildrenColor(newChildColor);
   }
